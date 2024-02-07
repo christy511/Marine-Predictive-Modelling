@@ -10,6 +10,7 @@
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage{longtable}
 
 % pinp change: the geometry package layout settings need to be set here, not in pinp.cls
 \geometry{layoutsize={0.95588\paperwidth,0.98864\paperheight},%
@@ -34,34 +35,29 @@
 \usepackage{makecell}
 \usepackage{xcolor}
 
-\title{Predicting the age of abalone by using only physical
-measurements}
+\title{Predicting the age of abalone using physical measurements}
 
-\author[a]{SIDs: 520420861}
-\author[a]{520477636}
-\author[a]{520556104}
-\author[a]{500282597}
-\author[a]{510041566}
+\author[a]{Christy Lee}
+\author[]{}
+\author[]{}
 
-  \affil[a]{DATA2002 Group 005E06, School of Mathematics and Statistics
-Carslaw Building (F07) University of Sydney NSW 2006}
 
 \setcounter{secnumdepth}{0}
 
 % Please give the surname of the lead author for the running footer
-\leadauthor{Group 005E06}
+\leadauthor{}
 
 % Keywords are not mandatory, but authors are strongly encouraged to provide them. If provided, please include two to five keywords, separated by the pipe symbol, e.g:
  
 
 \begin{abstract}
-In this report, we aimed to predict the age of abalone from the
+In this report, I aimed to predict the age of abalone from the
 \href{https://archive.ics.uci.edu/dataset/1/abalone}{UCI Abalone
-Dataset} by using only physical measurements. We found that a model
-constructed using only the variables that can be measured from live
-abalone was almost as accurate as the full model, and therefore
-recommend that this model be used for future research endeavours, due to
-its relative ease of use and animal welfare implications.
+Dataset} by using only physical measurements. My research revealed that
+a model built exclusively with variables measurable from living abalone
+nearly matched the accuracy of the comprehensive model. Consequently, I
+suggest employing this streamlined model in future studies for its
+simplicity and benefits to animal welfare.
 \end{abstract}
 
 \dates{This version was compiled on \today} 
@@ -69,9 +65,9 @@ its relative ease of use and animal welfare implications.
 
 % initially we use doi so keep for backwards compatibility
 % new name is doi_footer
-\doifooter{\url{https://github.sydney.edu.au/yyeh7345/005E06}}
+\doifooter{\url{https://github.com/christy511/AbaloneAgePrediction-ConservationModels.git}}
 
-\pinpfootercontents{Group 005E06}
+\pinpfootercontents{Christy Lee}
 
 \begin{document}
 
@@ -85,7 +81,7 @@ its relative ease of use and animal welfare implications.
 
 % If your first paragraph (i.e. with the \dropcap) contains a list environment (quote, quotation, theorem, definition, enumerate, itemize...), the line after the list may have some extra indentation. If this is the case, add \parshape=0 to the end of the list environment.
 
-\acknow{We used R version 4.3.1 \citep{RCoreTeam} to perform the
+\acknow{I used R version 4.3.1 \citep{RCoreTeam} to perform the
 calculations, along with the \textbf{tidyverse} suite of packages,
 including \textbf{ggplot2} for graphing \citep{tidyverse}. The
 \textbf{gridExtra}, \textbf{cowplot}, \textbf{ggfortify},
@@ -120,17 +116,17 @@ report was created using the `Pinp is not PNAS' template \citep{pinp}.}
 
 The goal of our project was to predict the age of the abalone, or the
 number of rings, by using physical measurements. This allows abalone to
-be surveyed much more quickly. However, we still need to open up and
-kill the abalone to measure the shucked, viscera and shell weight. This
-partially defeats the purpose of predicting the number of rings since
-the abalone still need to be killed.
+be surveyed much more quickly. However, abalone still need to be opened
+up to measure the shucked, viscera and shell weight. This partially
+defeats the purpose of predicting the number of rings since the abalone
+still need to be killed.
 
-As such, we produced a model that has access to all of the data,
+As such, I produced a model that has access to all of the data,
 alongside a live model that cannot use shucked, viscera and shell
-weight. We found the best model for each data set and compared them to
+weight. The best model for each data set was found and compared to
 assess if their performance is comparable. Based on this performance
-assessment, we then made recommendations for the most optimal model for
-surveying the age of abalone.
+assessment, recommendations were then made for the most optimal model
+for surveying the age of abalone.
 
 \hypertarget{data-set}{%
 \section{Data set}\label{data-set}}
@@ -138,11 +134,11 @@ surveying the age of abalone.
 The data set consists of several physical measurements taken from a 4177
 abalone of unknown origin. The majority of these are continuous
 variables, except for sex, which is categorical, and rings, which is an
-integer that provides the age of the abalone if we add 1.5. The rings
+integer that provides the age of the abalone if 1.5 is added. The rings
 were counted by cutting and staining the abalone shell, before using a
 microscope to inspect and count each of the rings \citep{abalone}. In
 the original data, all of the continuous variables were divided by 200
-so to simply result reporting, we reversed this by multiplying them by
+so to simply result reporting, I reversed this by multiplying them by
 200.
 
 \hypertarget{analysis}{%
@@ -166,7 +162,7 @@ out, while sex did not seem to significantly affect the distributions,
 although infant abalone made up the bulk of the lower data points
 (Figure 1).
 
-To improve the linearity of these relationships, we scaled the variables
+To improve the linearity of these relationships, I scaled the variables
 using the following scaling factors:
 
 \(\log_{10}(\widehat{\text{Rings}}) = \beta_0 + \beta_a\text{Sex}[M] + \beta_b\text{Sex} [F] + \beta_c\text{Sex}[I] + \beta_1\log_{10}(\text{Length}) + \beta_2\log_{10}(\text{Diameter}) + \beta_3\text{Height} + \beta_4\log_{10}(\text{Whole Weight}) + \beta_5\log_{10}(\text{Shucked Weight}) + \beta_6\log_{10}(\text{Viscera Weight}) + \beta_7\log_{10}(\text{Shell Weight}) + \varepsilon_i\)
@@ -368,24 +364,28 @@ model.
 \hfill\break
 \textbf{Live Abalone Model: }\\
 
-\begin{tabular}{r|r|r}
-\hline
-Rsquared & RMSE & MAE\\
-\hline
-0.504 & 0.098 & 0.075\\
-\hline
-\end{tabular}
+\begin{longtable}[]{@{}rrr@{}}
+\toprule\noalign{}
+Rsquared & RMSE & MAE \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+0.504 & 0.098 & 0.075 \\
+\end{longtable}
 
 \hfill\break
 \textbf{Original Model: }\\
 
-\begin{tabular}{r|r|r}
-\hline
-Rsquared & RMSE & MAE\\
-\hline
-0.638 & 0.084 & 0.064\\
-\hline
-\end{tabular}
+\begin{longtable}[]{@{}rrr@{}}
+\toprule\noalign{}
+Rsquared & RMSE & MAE \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+0.638 & 0.084 & 0.064 \\
+\end{longtable}
 
 \hypertarget{discussion-and-conclusion}{%
 \section{Discussion and Conclusion}\label{discussion-and-conclusion}}
@@ -403,7 +403,7 @@ use. However, care must still be taken when returning the abalone, which
 may be an additional cost consideration.
 
 The model here does have a few limitations however. By scaling the
-variables, we decreased the models' interpretability. This scaling also
+variables, I decreased the models' interpretability. This scaling also
 led to very low coefficients, which are vulnerable to being affected by
 minor rounding errors. Many of the variables also had correlation
 between them, indicating multicollinearity and therefore some degree of
