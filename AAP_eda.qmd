@@ -1,0 +1,106 @@
+---
+title: "Exploratory Data Analysis of the Abalone Dataset"
+author: 
+  - name: "Christy Lee"
+format: 
+  html:
+    code-fold: true
+    toc: true
+    toc-depth: 3
+editor: visual
+bibliography: report.bib
+---
+
+# Introduction
+
+The Abalone data set provides a fascinating opportunity to predict the age of abalone from physical measurements [@abalone].
+
+# Data Overview
+
+The data set consists of several variables, with the target variable being "Rings," which indicates the abalone's age. The independent variables include both physical measurements and the sex of the abalone, as detailed below:
+
+-   **Sex:** Categorical variable indicating male, female, or infant
+
+-   **Length:** Continuous variable measured in millimeters
+
+-   **Diameter:** Continuous variable measured in millimeters
+
+-   **Height:** Continuous variable measured in millimeters
+
+-   **Whole weight:** Total weight of the abalone in grams
+
+-   **Shucked weight:** Weight of the meat in grams
+
+-   **Viscera weight:** Gut weight after bleeding in grams
+
+-   **Shell weight:** Weight of the dried shell in grams
+
+Upon importing the data, the column names were renamed to enhance readability and facilitate easier analysis. Below is a snapshot of the abalone data set:
+
+```{r, tidy = TRUE, warning = FALSE, message=FALSE}
+abalone = read.csv("data/abalone.data", header = FALSE)
+colnames(abalone) = c("Sex", "Length", "Diameter", "Height", "Whole_weight", "Shucked_weight", "Viscera_weight", "Shell_weight", "Rings")
+head(abalone)
+```
+
+## Data Cleaning and Preparation
+
+An initial assessment for missing values was performed, confirming that there is a consistent number of observations with no missing data.
+
+```{r, tidy = TRUE, warning = FALSE, message=FALSE}
+library(tidyverse)
+theme_set(theme_bw())
+visdat::vis_miss(abalone) + coord_flip() + theme(legend.position = "none")
+```
+
+# Exploratory Data Analysis
+
+The analysis began with examining the distribution of the "Rings" variable to understand the age distribution within the data set.
+
+```{r, tidy = TRUE, warning = FALSE, message=FALSE}
+ggplot(abalone, aes(x = Rings)) + 
+  geom_histogram(binwidth = 1, fill = "skyblue", color = "black", alpha = 0.7) +
+  theme_minimal() +
+  labs(title = "Distribution of Rings (Age)", x = "Rings", y = "Count")
+```
+
+The relationship between the "Sex" variable and "Rings" was explored to determine if there were any noticeable differences in age distribution among the different sex categories.
+
+```{r, tidy = TRUE, warning = FALSE, message=FALSE}
+ggplot(abalone, aes(x = Sex, y = Rings)) +
+  geom_boxplot(aes(fill = Sex), outlier.color = "red", outlier.shape = 16) +
+  theme_minimal() +
+  labs(title = "Distribution of Rings by Sex", x = "Sex", y = "Rings")
+```
+
+A series of scatter plots were created to analyze the relationships between the continuous variables (Length, Diameter, Height, Whole_weight, Shucked_weight, Viscera_weight, Shell_weight) and the "Rings" variable. This was aimed at identifying any potential correlations between the physical measurements of the abalones and their age.
+
+```{r, tidy = TRUE, warning = FALSE, message=FALSE}
+continuous_vars = c("Length", "Diameter", "Height", "Whole_weight", "Shucked_weight", "Viscera_weight", "Shell_weight")
+
+abalone %>%
+  pivot_longer(cols = continuous_vars, names_to = "variable", values_to = "values") %>%
+  ggplot() + 
+  aes(x = values, y = Rings, colour = Sex) + 
+  geom_point(alpha = 0.3) + 
+  facet_grid(~ variable, scales = "free_x") + 
+  scale_colour_brewer(palette = "Set1") + 
+  geom_smooth(method = "lm", se = FALSE) + 
+  theme(legend.position = "top")
+```
+
+# Results
+
+The exploratory data analysis revealed that continuous variables, such as the physical measurements of abalones, play a significant role in predicting the age. Additionally, preliminary findings suggest a potential relationship between the sex of the abalone and its age, indicating that different growth patterns may exist among the sexes.
+
+# Conclusion
+
+This exploratory data analysis of the Abalone data set highlights the critical role of data visualization and statistical analysis in uncovering patterns and insights within complex data sets. The methodology and findings presented here demonstrate a rigorous approach to data analysis, emphasizing the importance of cleanliness, accuracy, and thorough exploration of data.
+
+<!-- Footer -->
+
+::: {#footer}
+### Get in Touch
+
+This document is part of a research project hosted on GitHub. For more information, visit the [project repository](https://github.com/christy511/AbaloneAgePrediction-ConservationModels.git). Additionally, to learn more about my work and connect with me, feel free to visit my [LinkedIn](https://www.linkedin.com/in/christy-lee-798b53276/) profile and my [GitHub](https://github.com/christy511) profile.
+:::

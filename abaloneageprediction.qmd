@@ -1,0 +1,341 @@
+---
+title: "Abalone Age Prediction"
+author: 
+  - name: "Christy Lee"
+format: 
+  html:
+    code-fold: true
+    toc: true
+    toc-depth: 3
+editor: visual
+nocite: '@*'
+doi_footer: "https://github.com/christy511/AbaloneAgePrediction-ConservationModels.git"
+abstract: "In this report, I aimed to predict the age of abalone from the UCI Abalone Dataset by using only physical measurements. My research revealed that a model built exclusively with variables measurable from living abalone nearly matched the accuracy of the comprehensive model. Consequently, I suggest employing this streamlined model in future studies for its simplicity and benefits to animal welfare."
+bibliography: report.bib
+---
+
+# Introduction
+
+The goal of the project was to predict the age of the abalone, or the number of rings, by using physical measurements. This allows abalone to be surveyed much more quickly. However, abalone still need to be opened up to measure the shucked, viscera and shell weight. This partially defeats the purpose of predicting the number of rings since the abalone still need to be killed.
+
+As such, I produced a model that has access to all of the data, alongside a live model that is unable to use shucked, viscera and shell weight. The best model for each data set was found and compared to assess if their performance is comparable. Based on this performance assessment, recommendations were then made for the most optimal model for surveying the age of abalone.
+
+# Data Set
+
+The data set consists of several physical measurements taken from a 4177 abalone of unknown origin. The majority of these are continuous variables, except for sex, which is categorical, and rings, which is an integer that provides the age of the abalone if 1.5 is added. The rings were counted by cutting and staining the abalone shell, before using a microscope to inspect and count each of the rings [@abalone]. In the original data, all of the continuous variables were divided by 200 so to simply result reporting, I reversed this by multiplying them by 200.
+
+# Analysis
+
+The data set had no missing values and was assumed to be independent, as long as no individual abalone were measured twice. The distribution of rings is positively skewed.
+
+```{r, tidy = TRUE, warning = FALSE, message=FALSE, fig.cap="asdf", echo = FALSE, fig.width=3, fig.height=2}
+library("tidyverse")
+# library("gt")
+# library("janitor")
+# library("grid")
+library("gridExtra") #for grid.arrange
+library("cowplot") #for get_legend
+library("caret") #for train
+library("ggfortify") #so autoplot can use lm
+# library("GGally")
+library("kableExtra") #for as_image
+# library("magrittr")
+library("corrplot")
+# library("ggcorrplot")
+library("utils")
+library("tinytex")
+
+
+# Specify the path to Google Chrome for webshot2/chromote
+options(chromote.chrome = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
+
+rawdata = read.csv("data/abalone.data", header = FALSE)
+names(rawdata) = c("Sex","Length","Diameter","Height","Whole_weight","Shucked_weight","Viscera_weight","Shell_weight","Rings")
+
+rawdata = rawdata |> mutate(
+  Sex = Sex,
+  Length = Length * 200,
+  Diameter = Diameter * 200,
+  Height = Height * 200,
+  Whole_weight = Whole_weight * 200,
+  Shucked_weight = Shucked_weight * 200,
+  Viscera_weight = Viscera_weight * 200,
+  Shell_weight = Shell_weight * 200, 
+  Rings = Rings
+)
+rawdata$Sex <- factor(rawdata$Sex, levels = c("M", "F", "I"))
+
+data_scaled = tibble(
+  sex = rawdata$Sex,
+  log_length = log10(rawdata$Length),
+  log_diameter = log10(rawdata$Diameter),
+  height = rawdata$Height,
+  log_whole_weight = log10(rawdata$Whole_weight),
+  log_shucked_weight = log10(rawdata$Shucked_weight),
+  log_viscera_weight = log10(rawdata$Viscera_weight),
+  log_shell_weight = log10(rawdata$Shell_weight), 
+  log_rings = log10(rawdata$Rings)
+)
+data_scaled$Sex <- factor(data_scaled$sex, levels = c("M", "F", "I"))
+
+data_scaled_live = tibble(
+  sex = rawdata$Sex,
+  log_length = log10(rawdata$Length),
+  log_diameter = log10(rawdata$Diameter),
+  height = rawdata$Height,
+  log_whole_weight = log10(rawdata$Whole_weight),
+  log_rings = log10(rawdata$Rings)
+)
+```
+
+## Pre-Modelling Assumption Checking
+
+To meet the assumptions of a valid linear regression, the dependent and independent variables must have a linear relationship including a consistent variance. There should also not exist multicollinearity amongst independent variables.
+
+The variables were not linearly correlated with rings as the data fanned out, while sex did not seem to significantly affect the distributions, although infant abalone made up the bulk of the lower data points (Figure 1).
+
+To improve the linearity of these relationships, I scaled the variables using the following scaling factors:
+
+```{=tex}
+\begin{aligned}
+\log_{10}(\widehat{\text{Rings}}) =\ & \beta_0 + \beta_a\text{Sex}[M] + \beta_b\text{Sex}[F] +  \beta_1\log_{10}(\text{Length}) + \beta_2\log_{10}(\text{Diameter}) + \\
+& \beta_3\text{Height} + \beta_4\log_{10}(\text{Whole Weight}) +
+\beta_5\log_{10}(\text{Shucked Weight}) + \\
+& \beta_6\log_{10}(\text{Viscera Weight}) + \beta_7\log_{10}(\text{Shell Weight}) + \\
+& \varepsilon_i
+\end{aligned}
+```
+Figure 2 shows the improved linearity of the scaled data. Multicollinearity may affect the usefulness of our model as all of the variables are highly positively correlated, but none of the variables were perfectly correlated (having a correlation coefficient of ±1), so it was not a major concern (Figure 3).
+
+## Model Selection - Original Model
+
+To select the best variables as predictors for log rings, the following analysis facilitates the AIC minimisation approach.
+
+The forward-stepping method starts from the null model consisting of none of the variables in the data set and adds the most formative variable in turn. In contrast, the backward-stepping method starts from the full model consisting of all variables in the data set and removes the least formative variables from the model in turn. Both approaches aim to minimise the AIC value.
+
+Both the forward and backward-stepping methods suggested that the full model the the most optimal selection.
+
+## Model Assumption Checking - Original Model
+
+For a multiple regression model to be valid, the model has to satisfy the following assumptions:
+
+-   Linearity: Residuals are approximately symmetrical in their distribution above and below zero.
+
+-   Homoscedasticity: Residuals are scattered symmetrically around the 0 line with fairly even variance and linearity.
+
+-   Normality: Residuals are approximately normally distributed since most of the points align with the normal line in the QQ plot.
+
+The residual and QQ plots (Figure 4) suggest that the assumptions are not seriously violated. The residuals are mostly linearly and evenly scattered, and the residuals mostly align with the theoretical quantile line.
+
+## A More Context-Logical Model - Live Abalone
+
+While the model selection process is statistically based, the variables selected should also make logical sense in the real-world context. The shucked, viscera and shell weights can only be measured by killing and opening the abalone. However, by opening an abalone, the number of rings can be counted without the need for predictions. Therefore to improve the utility of our model, the subsequent analysis will be carried out using the 'live' abalone data set, created by removing log shucked, viscera and shell weights from the original scaled data set.
+
+Another benefit associated with the live abalone model is a reduction in redundant variables. Since shucked, viscera and shell weights all contribute and a highly correlated with the whole weight, the model can simply use the aggregate information, the whole weight, as the predictor. This results in a decrease in multicollinearity, although the correlation between the remaining variables may still hinder our model's usefulness.
+
+## Model Selection - Live Abalone
+
+The model selection approach for the live abalone data set replicates that of the original scaled data set above, using the AIC minimisation approach.
+
+Again, both forward and backward-stepping methods suggested that the full model of the live abalone data set is the most optimal selection.
+
+## Model Assumption Checking - Live Abalone
+
+Similarly to the original model, the live abalone model has to meet the linearity, homoscedasticity and normality assumptions.
+
+The residual and QQ plots (Figure 5) suggest that the assumptions are not seriously violated. The residuals are mostly linearly and evenly scattered, and the residuals mostly align with the theoretical quantile line.
+
+# Results
+
+## Models Produced
+
+The mathematical expressions of the original model is as follows:
+
+$$
+\begin{aligned}
+\log_{10}(\widehat{\text{Rings}}) &= 0.523 + 0.000446(\text{Sex}[F]) - 0.0226(\text{Sex}[I]) \\
+&\quad - 0.315(\log_{10}(\text{Length})) + 0.201(\log_{10}(\text{Diameter})) \\
+&\quad + 0.000555(\text{Height}) + 0.59(\log_{10}(\text{Whole Weight})) \\
+&\quad - 0.583(\log_{10}(\text{Shucked Weight})) - 0.0759(\log_{10}(\text{Viscera Weight})) \\
+&\quad + 0.366(\log_{10}(\text{Shell Weight}))
+\end{aligned}
+$$\
+
+Sex is an categorical variable, so replacing a sex with 1 and others with 0 indicates the corresponding sex. The male sex has become the intercept. The inferences of the model include:
+
+-   log-log relationships:
+
+    -   For every 1% increase in Length, holding all else constant, the number of rings is expected to drop by 0.0315%
+
+    -   For every 1% increase in Diameter, holding all else constant, the number of rings is expected to increase by 0.201%, etc.
+
+<!-- -->
+
+-   log-linear relationship:
+
+    -   For every 1 unit increase in Height, holding all else constant, the number of rings is expected to increase by 0.056%
+
+The mathematical expressions of the live abalone model is as follows:
+
+```{=tex}
+\begin{aligned}
+\log_{10}(\widehat{\text{Rings}}) &= 0.519 + 0.00480(\text{Sex}[F]) - 0.0355(\text{Sex}[I]) \\
+&\quad - 0.580(\log_{10}(\text{Length})) + 0.649(\log_{10}(\text{Diameter})) \\
+&\quad + 0.00202(\text{Height}) + 0.163(\log_{10}(\text{Whole Weight}))
+\end{aligned}
+```
+\
+Sex is interpreted in the same manner as the original model, with 1 used to indicate the corresponding sex and the male sex incorporated into the intercept. The inferences of the model include:
+
+-   log-log relationships:
+
+    -   For every 1% increase in Length, holding all else constant, the number of rings is expected to decrease by 0.580%
+
+    -   For every 1% increase in Diameter, holding all else constant, the number of rings is expected to increase by 0.649%, etc.
+
+-   log-linear relationship:
+
+    -   For every 1 unit increase in Height, holding all else constant, the number of rings is expected to increase by 0.202%.
+
+## Performance Assessment
+
+The performance assessment compares the in-sample and out-of-sample performance of both the original and live abalone models.
+
+The in-sample performance can be evaluated by comparing the $r^2$ value, which is the percentage of the variation of the dependent variable that can be explained by that of the independent variables. Thus, the greater the $r^2$, the better the model at predicting values that it has been trained on.
+
+The out-of-sample performance was evaluated by looking at the RMSE and MAE, both of which measure the error of prediction. This means that smaller RMSE and MAE values correspond with better the out-of-sample performance.
+
+The assessment was carried out using repeated cross-validation, which iteratively resamples training and test data sets to compare the performance of the models and mitigate the impact of variation between different samples.
+
+The following results suggest that the original model, as expected, has a better in-sample performance as it consists of more explanatory variables than the live abalone model ($r^2$: 0.638 \> 0.504). Additionally, the original model also has a better out-of-sample performance, having slightly lower RMSE and MAE than the live abalone model.
+
+## Live Abalone Model
+
+```{r, message=FALSE, warning=FALSE, echo = FALSE}
+set.seed(123)
+cv_live_scaled = train(
+  log_rings ~ ., 
+  data = data_scaled_live,
+  method = "lm",
+  trControl = trainControl(
+    method = "repeatedcv",
+    verboseIter = FALSE
+  )
+)
+round(cv_live_scaled$results[c("Rsquared", "RMSE", "MAE")], 3) |> 
+  knitr::kable()
+```
+
+## Original Model
+
+```{r, message=FALSE, warning=FALSE, echo = FALSE}
+set.seed(123)
+cv_scaled = train(
+  log_rings ~ ., 
+  data = data_scaled,
+  method = "lm",
+  trControl = trainControl(
+    method = "repeatedcv",
+    verboseIter = FALSE
+  )
+)
+round(cv_scaled$results[c("Rsquared", "RMSE", "MAE")], 3) |> knitr::kable()
+```
+
+# Discussion and Conclusion
+
+The original model offers limited performance gains but comes with significant environmental consequences. This makes it more suitable for surveying abalone already intended for consumption rather than research, and emphasises the importance of balancing predictive accuracy and environmental impact in model choice.
+
+The live model uses a much less invasive method and improves animal welfare, making it more socially acceptable. By requiring less measurements, this method is also quicker and more cost-effective to use. However, care must still be taken when returning the abalone, which may be an additional cost consideration.
+
+The model here does have a few limitations however. By scaling the variables, I decreased the models' interpretability. This scaling also led to very low coefficients, which are vulnerable to being affected by minor rounding errors. Many of the variables also had correlation between them, indicating multicollinearity and therefore some degree of redundancy (Figure 3). AIC also has a tendency to overfit, although our large sample size and small number of dimensions mitigates this concern [@hurvich].
+
+The model may not be generalisable to other species of abalone, so the model could be further improved by testing on other species of abalone from other places in the world. Other models, such as neural networks, may also be explored to see if they can achieve stronger correlation and improved accuracy.In conclusion, the non-invasive method offers similar accuracy while favouring animal welfare and being easy to use, making it our model of choice in real-world scenarios.
+
+# Appendix
+
+```{r original_scatter, tidy = TRUE, warning = FALSE, message=FALSE, fig.cap="Figure 1: Original data scatter plot, comparing independent variables with rings", echo = FALSE, fig.height=3}
+  
+par( mfrow= c(2,4) )
+plot1 <- ggplot(rawdata, aes(y=Rings, x=Length, colour = Sex)) + geom_point(size=0.1) + geom_smooth(method = "lm", colour = "black", size=0.6) + theme(legend.position="none") + scale_color_manual(values = c("#008FFF", "#FF3200", "#46D100")) + theme(text = element_text(size=5))
+plot2 <- ggplot(rawdata, aes(y=Rings, x=Diameter, colour = Sex)) + geom_point(size=0.1) + geom_smooth(method = "lm", colour = "black", size=0.6) + theme(legend.position="none") + scale_color_manual(values = c("#008FFF", "#FF3200", "#46D100")) + theme(text = element_text(size=5))
+plot3 <- ggplot(rawdata, aes(y=Rings, x=Height, colour = Sex)) + geom_point(size=0.1) + geom_smooth(method = "lm", colour = "black", size=0.6) + theme(legend.position="none") + scale_color_manual(values = c("#008FFF", "#FF3200", "#46D100")) + theme(text = element_text(size=5))
+plot4 <- ggplot(rawdata, aes(y=Rings, x=Whole_weight, colour = Sex)) + geom_point(size=0.1) + geom_smooth(method = "lm", colour = "black", size=0.6) + theme(legend.position="none") + scale_color_manual(values = c("#008FFF", "#FF3200", "#46D100")) + theme(text = element_text(size=5))
+plot5 <- ggplot(rawdata, aes(y=Rings, x=Shucked_weight, colour = Sex)) + geom_point(size=0.1) + geom_smooth(method = "lm", colour = "black", size=0.6) + theme(legend.position="none") + scale_color_manual(values = c("#008FFF", "#FF3200", "#46D100")) + theme(text = element_text(size=5))
+plot6 <- ggplot(rawdata, aes(y=Rings, x=Viscera_weight, colour = Sex)) + geom_point(size=0.1) + geom_smooth(method = "lm", colour = "black", size=0.6) + theme(legend.position="none") + scale_color_manual(values = c("#008FFF", "#FF3200", "#46D100")) + theme(text = element_text(size=5))
+plot7 <- ggplot(rawdata, aes(y=Rings, x=Shell_weight, colour = Sex)) + geom_point(size=0.1) + geom_smooth(method = "lm", colour = "black", size=0.6) + theme(legend.position="none") + scale_color_manual(values = c("#008FFF", "#FF3200", "#46D100")) + theme(text = element_text(size=5))
+
+legend <- get_legend(ggplot(rawdata, aes(y=Rings, x=Length, colour = Sex)) + geom_point() + geom_smooth(method = "lm", colour = "black") + scale_color_manual(values = c("#008FFF", "#FF3200", "#46D100"))+theme( legend.key.size = unit(3, 'mm'), legend.title = element_text(size=10), legend.text = element_text(size=7))) 
+
+img_raw = grid.arrange(plot1, plot2, plot3, plot4, plot5, plot6, plot7, legend, ncol=2) %>% as_image(height = 2.5)
+```
+
+```{r scaled_scatter, tidy = TRUE, warning = FALSE, message=FALSE, fig.cap="Figure 2: Scaled data scatter plot, comparing independent variables with rings", echo = FALSE}
+
+par( mfrow= c(2,4) )
+plot1 <- ggplot(data_scaled, aes(y=log_rings, x=log_length, colour = sex)) + geom_point(size=0.1) + geom_smooth(method = "lm", colour = "black", size=0.6) + theme(legend.position="none") + scale_color_manual(values = c("#008FFF", "#FF3200", "#46D100")) + theme(text = element_text(size=5))
+plot2 <- ggplot(data_scaled, aes(y=log_rings, x=log_diameter, colour = sex)) + geom_point(size=0.1) + geom_smooth(method = "lm", colour = "black", size=0.6) + theme(legend.position="none") + scale_color_manual(values = c("#008FFF", "#FF3200", "#46D100")) + theme(text = element_text(size=5))
+plot3 <- ggplot(data_scaled, aes(y=log_rings, x=height, colour = sex)) + geom_point(size=0.1) + geom_smooth(method = "lm", colour = "black", size=0.6) + theme(legend.position="none") + scale_color_manual(values = c("#008FFF", "#FF3200", "#46D100")) + theme(text = element_text(size=5))
+plot4 <- ggplot(data_scaled, aes(y=log_rings, x=log_whole_weight, colour = sex)) + geom_point(size=0.1) + geom_smooth(method = "lm", colour = "black", size=0.6) + theme(legend.position="none") + scale_color_manual(values = c("#008FFF", "#FF3200", "#46D100")) + theme(text = element_text(size=5))
+plot5 <- ggplot(data_scaled, aes(y=log_rings, x=log_shucked_weight, colour = sex)) + geom_point(size=0.1) + geom_smooth(method = "lm", colour = "black", size=0.6) + theme(legend.position="none") + scale_color_manual(values = c("#008FFF", "#FF3200", "#46D100")) + theme(text = element_text(size=5))
+plot6 <- ggplot(data_scaled, aes(y=log_rings, x=log_viscera_weight, colour = sex)) + geom_point(size=0.1) + geom_smooth(method = "lm", colour = "black", size=0.6) + theme(legend.position="none") + scale_color_manual(values = c("#008FFF", "#FF3200", "#46D100")) + theme(text = element_text(size=5))
+plot7 <- ggplot(data_scaled, aes(y=log_rings, x=log_shell_weight, colour = sex)) + geom_point(size=0.1) + geom_smooth(method = "lm", colour = "black", size=0.6) + theme(legend.position="none") + scale_color_manual(values = c("#008FFF", "#FF3200", "#46D100")) + theme(text = element_text(size=5))
+
+legend <- get_legend(ggplot(rawdata, aes(y=Rings, x=Length, colour = Sex)) + geom_point() + geom_smooth(method = "lm", colour = "black") + scale_color_manual(values = c("#008FFF", "#FF3200", "#46D100"))+theme( legend.key.size = unit(3, 'mm'), legend.title = element_text(size=10), legend.text = element_text(size=7))) 
+
+img_scaled = grid.arrange(plot1, plot2, plot3, plot4, plot5, plot6, plot7, legend, ncol=2) %>% as_image(height = 3)
+```
+
+```{r correlation_matrix, warning = FALSE, message=FALSE, fig.cap="Figure 3: Correlation heatmap (scaled)", echo = FALSE, fig.height=3}
+
+corrplot::corrplot(cor(data_scaled[,2:9]),addCoef.col ='white', number.cex = 0.3, tl.cex = 0.5, cl.cex = 0.3, type = 'upper', diag = FALSE, method = 'circle')
+```
+
+```{r, echo = FALSE, fig.width=10, fig.cap="Original model selection"}
+M0_scaled = lm(log_rings ~ 1, data = data_scaled)  # Null model
+M1_scaled = lm(log_rings ~ ., data = data_scaled)  # Full model
+
+step.back.aic.scaled = step(M1_scaled, 
+                     direction = "backward", 
+                     trace = FALSE)
+
+step.fwd.aic.scaled = step(M0_scaled, 
+                           scope = list(lower = M0_scaled, upper = M1_scaled),
+                           direction = "forward", 
+                           trace = FALSE)
+```
+
+```{r original_assumptions, echo = FALSE, fig.height=1.5, fig.cap="Figure 4: Original model residual and QQ plots"}
+autoplot(M1_scaled, which = 1:2, size = 0.3) + theme_light(base_size = 5) + theme(text = element_text(size=5))
+```
+
+```{r, echo = FALSE, fig.cap="Live abalone model selection"}
+M0_scaled_live = lm(log_rings ~ 1, data = data_scaled_live)  # Null model
+M1_scaled_live = lm(log_rings ~ ., data = data_scaled_live)  # Full model
+
+step.back.aic.scaled.live = step(M1_scaled_live, 
+                     direction = "backward", 
+                     trace = FALSE)
+
+step.fwd.aic.scaled.live = step(M0_scaled_live, 
+                                scope = list(lower = M0_scaled_live, upper = M1_scaled_live),
+                                direction = "forward", 
+                                trace = FALSE)
+
+```
+
+```{r live_assumptions, echo = FALSE, fig.height=1.5, fig.cap="Figure 5: Live model residual and QQ plots"}
+autoplot(M1_scaled_live, which = 1:2, size=0.3) + theme_light(base_size = 5) + theme(text = element_text(size=5))
+```
+
+#### Acknowledgements
+
+I used R version 4.3.1 to perform the calculations, along with the **tidyverse** suite of packages, including **ggplot2** for graphing. The **gridExtra**, **cowplot**, **ggfortify**, **kableExtra**, and **corrplot** packages were also used to help produce the figures. Performance assessment was done using **caret**.
+
+<!-- Footer -->
+
+::: {#footer}
+### Get in Touch
+
+This document is part of a research project hosted on GitHub. For more information, visit the [project repository](https://github.com/christy511/AbaloneAgePrediction-ConservationModels.git). Additionally, to learn more about my work and connect with me, feel free to visit my [LinkedIn](https://www.linkedin.com/in/christy-lee-798b53276/) profile and my [GitHub](https://github.com/christy511) profile.
+:::
