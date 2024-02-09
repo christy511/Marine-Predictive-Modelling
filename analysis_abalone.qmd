@@ -7,6 +7,7 @@ format:
     code-fold: true
     toc: true
     toc-depth: 3
+embed-resources: true
 editor: visual
 nocite: '@*'
 doi_footer: "https://github.com/christy511/AbaloneAgePrediction-ConservationModels.git"
