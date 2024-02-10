@@ -31,5 +31,5 @@ The analysis utilizes **Multiple Linear Regression**, a supervised learning tech
 Here are a few more projects from my portfolio:
 - [Moderator Program + Test Framework](https://github.com/christy511/ModeratorProgram-TestFramework)
 A chat forum moderation program and a separate testing program designed to evaluate the performance of the moderation program.
-- [Customised Fitness Regimen](https://github.com/christy511/Customised-Fitness-Regimen/tree/main)
+- [Customised Fitness Regimen](https://github.com/christy511/Customised-Fitness-Regimen)
 Adaptive workout recommendation engine using conditional logic and user data.
