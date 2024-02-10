@@ -1,0 +1,10 @@
+$
+ProjectdalKnockKnockJokeRedirectb
+DescriptionSUser wants to tell Siri a knock knock joke but we redirect to tell them one instead1
+	Copyright$(c) 2023 Apple. All rights reserved.
+	languagesen"Q
+redirectb1SocialConversation#dalKnockKnockRedirect_redirect‚triggerKnockKnock*Q
+triggerKnockKnockJauthoredFlowR.
+flowId*$SocialConversation#dalKnockKnockJokeÒ2.0.7‚
+
+redirect

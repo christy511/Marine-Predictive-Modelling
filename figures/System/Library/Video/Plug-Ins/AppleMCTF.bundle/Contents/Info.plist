@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>22A380019</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>AppleMCTF</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.AppleMCTF</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>CFBundleName</key>
+	<string>AppleMCTF</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>CMClassImplementations</key>
+	<array>
+		<dict>
+			<key>CMClassID</key>
+			<string>com.apple.videotoolbox.temporalfilter</string>
+			<key>CMClassImplementationID</key>
+			<string>com.apple.videotoolbox.temporalfilter.mctf</string>
+			<key>CMClassImplementationName</key>
+			<string>Motion Compensated Temporal Filter</string>
+			<key>CMClassImplementationVersion</key>
+			<integer>1</integer>
+			<key>CMCopyright</key>
+			<string>Copyright (c) 2022 Apple Inc. All rights reserved.</string>
+			<key>CMDependencies</key>
+			<dict>
+				<key>IORegistryRequiredKey</key>
+				<string>MCTFCanDo420</string>
+				<key>IORegistryServiceName</key>
+				<string>AppleAVE2Driver</string>
+			</dict>
+			<key>CMExecutableArchitectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>CMFactoryFunction</key>
+			<string>AVE_MCTF_Plugin_CreateInstance</string>
+			<key>CMManufacturer</key>
+			<string>Apple</string>
+			<key>CMMatchingInfo</key>
+			<dict>
+				<key>VTIORegistryCapabilitiesKey</key>
+				<string>IOAVEMCTFFilterCapabilities</string>
+				<key>VTTemporalFilterClass</key>
+				<string>TemporalNoiseReduction</string>
+			</dict>
+			<key>VTTemporalFilterClassName</key>
+			<string>Motion Compensated Temporal Filter</string>
+			<key>VTTemporalFilterName</key>
+			<string>Motion Compensated Temporal Filter</string>
+		</dict>
+	</array>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string></string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>14.3</string>
+	<key>DTSDKBuild</key>
+	<string>23D45</string>
+	<key>DTSDKName</key>
+	<string>macosx14.3.internal</string>
+	<key>DTXcode</key>
+	<string>1500</string>
+	<key>DTXcodeBuild</key>
+	<string>15A6160m</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>14.3</string>
+</dict>
+</plist>

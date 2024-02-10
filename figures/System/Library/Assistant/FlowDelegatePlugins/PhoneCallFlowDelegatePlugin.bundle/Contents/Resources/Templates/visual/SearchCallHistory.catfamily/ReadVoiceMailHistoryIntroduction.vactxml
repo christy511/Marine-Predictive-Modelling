@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:visualcat:1.0" id="SearchCallHistory#ReadVoiceMailHistoryIntroduction">
+    <parameters>
+        <parameter name="newRecordsCount" type="dialog.Number"/>
+        <parameter name="savedRecordsCount" type="dialog.Number"/>
+        <parameter name="intent" type="phone.SearchCallHistoryIntent"/>
+    </parameters>
+</cat>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:visualcat:2.0" id="CAMDisambiguate#custom_Visual">
+    <meta name="description" value="This one visual cat is used for all App Shortcut custom views."/>
+    <response>
+        <sections id="Item">
+            <level-of-detail>FULL</level-of-detail>
+            <level-of-detail>SUPPORTING</level-of-detail>
+            <component-list>
+            </component-list>
+        </sections>
+    </response>
+</cat>

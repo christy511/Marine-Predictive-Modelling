@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>22A380019</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>ExtensionShim</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.mediaextension.shim</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>CMClassImplementations</key>
+	<array>
+		<dict>
+			<key>CMClassID</key>
+			<string>com.apple.videotoolbox.videodecoder</string>
+			<key>CMClassImplementationID</key>
+			<string>com.apple.videotoolbox.videodecoder.extensionwrapper</string>
+			<key>CMClassImplementationName</key>
+			<string>Extension Decoder</string>
+			<key>CMClassImplementationVersion</key>
+			<integer>1</integer>
+			<key>CMCopyright</key>
+			<string>Copyright (c) 2022 Apple Inc. All rights reserved.</string>
+			<key>CMExecutableArchitectures</key>
+			<array>
+				<string>x86_64</string>
+				<string>i386</string>
+				<string>armv7</string>
+			</array>
+			<key>CMFactoryFunction</key>
+			<string>ExtensionDecoderWrapper_CreateInstance</string>
+			<key>CMManufacturer</key>
+			<string>Apple</string>
+			<key>CMMatchingInfo</key>
+			<dict>
+				<key>VTCodecType</key>
+				<string>ext#</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>CMClassID</key>
+			<string>com.apple.mediatoolbox.formatreader</string>
+			<key>CMClassImplementationID</key>
+			<string>com.apple.mediatoolbox.formatreader.extension</string>
+			<key>CMClassImplementationName</key>
+			<string>Extension Format Reader</string>
+			<key>CMClassImplementationVersion</key>
+			<integer>1</integer>
+			<key>CMCopyright</key>
+			<string>Copyright (c) 2022 Apple Inc. All rights reserved.</string>
+			<key>CMExecutableArchitectures</key>
+			<array>
+				<string>x86_64</string>
+			</array>
+			<key>CMFactoryFunction</key>
+			<string>objcWrapperPluginFormatReader_CreateInstance</string>
+			<key>CMManufacturer</key>
+			<string>Apple</string>
+			<key>CMMatchingInfo</key>
+			<dict>
+				<key>MTFileNameExtensionArray</key>
+				<array>
+					<string>ext#</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
+	<key>CSResourcesFileMapped</key>
+	<true/>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string></string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>14.3</string>
+	<key>DTSDKBuild</key>
+	<string>23D45</string>
+	<key>DTSDKName</key>
+	<string>macosx14.3.internal</string>
+	<key>DTXcode</key>
+	<string>1500</string>
+	<key>DTXcodeBuild</key>
+	<string>15A6160m</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>14.3</string>
+</dict>
+</plist>

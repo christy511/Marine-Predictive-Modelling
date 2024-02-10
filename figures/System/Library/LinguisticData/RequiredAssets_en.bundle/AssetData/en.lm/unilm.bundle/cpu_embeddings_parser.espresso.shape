@@ -1,0 +1,4659 @@
+{
+  "layer_shapes" : {
+    "ane_gpt2_transformer_layer_3d_4\/ln_pre_ffn_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5:value_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/ln_pre_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/act_out\/abs" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/act_out\/scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/ln_pre_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2:value_state_concat" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/context_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_contract\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/ln_pre_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ln_pre_ffn_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/ln_pre_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/act_out\/quantized_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1:value_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1:raw_score" : {
+      "k" : 8,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_expand\/output_raw" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ln_pre_attn_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/residual_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/residual_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_contract_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "decoder\/ln_final_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/ln_pre_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/residual_attn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1:scaled_raw_score" : {
+      "k" : 8,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ln_pre_ffn_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/contract\/output_raw" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/ln_pre_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/expand_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1:query" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ln_pre_ffn_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_expand\/output_scaled_per_token" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/ln_pre_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ln_pre_attn_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_act_out" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/act_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ln_pre_attn_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/ln_pre_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_act_out\/abs" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ln_pre_attn_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5:key_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/ln_pre_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/context_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ln_pre_attn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "decoder\/ln_final_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/ln_pre_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d:query" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/ln_pre_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2:key_fc" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ln_pre_ffn_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_contract\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4:query_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/expand\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/expand\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_expand_out" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ln_pre_ffn_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/ln_pre_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_act_out\/scaled_per_token" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/expand\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/act_out\/scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ln_pre_ffn_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_act_out\/abs" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_contract_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/act_out\/quantized_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/act_out\/abs" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/act_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/residual_ffn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2:query_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2:scaled_raw_score" : {
+      "k" : 8,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/contract_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d:key_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/ln_pre_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ln_pre_attn_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ln_pre_attn_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/act_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/act_out\/quantized_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/act_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ln_pre_ffn_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/ln_pre_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1:query_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_expand\/output_scaled_per_token" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/act_out\/abs" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "decoder\/ln_final_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/contract\/output_raw" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1:key_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/ln_pre_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/ln_pre_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/expand_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4:value_state_concat" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/ln_pre_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/ln_pre_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ln_pre_ffn_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/contract\/output_scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ln_pre_ffn_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_contract\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d:raw_score" : {
+      "k" : 8,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ln_pre_ffn_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ln_pre_ffn_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/expand\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ln_pre_attn_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "input" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/act_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/residual_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/act_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3:key_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/ln_pre_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ln_pre_attn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/act_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_act_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_act_out\/scaled_per_token" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ln_pre_ffn_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3:scaled_raw_score" : {
+      "k" : 8,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/ln_pre_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/residual_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_act_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3:value_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/expand\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/ln_pre_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ln_pre_attn_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/residual_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_act_out\/abs" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/contract_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ln_pre_attn_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ln_pre_attn_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d:key_fc" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/act_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/act_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/ln_pre_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d:query_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/act_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ln_pre_ffn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/ln_pre_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/ln_pre_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_act_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/ln_pre_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/act_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/ln_pre_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/expand_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1:key_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_fc_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ln_pre_attn_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/act_out\/quantized_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_expand\/output_raw" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/ln_pre_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1:value_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2:key_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/ln_pre_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3:key_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ln_pre_attn_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ln_pre_attn_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/act_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/ln_pre_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d:scaled_raw_score" : {
+      "k" : 8,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ln_pre_attn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/act_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ln_pre_attn_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ln_pre_attn_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/ln_pre_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1:query_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4:key_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ln_pre_ffn_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/ln_pre_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_act_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "position_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/ln_pre_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_act_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/ln_pre_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5:key_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/act_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/context_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1:softmax" : {
+      "k" : 8,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ln_pre_attn_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2:query_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5:query" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5:weighted_avg" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3:key_fc" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/act_out\/scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2:softmax" : {
+      "k" : 8,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ln_pre_attn_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/contract\/output_raw" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_expand\/output_scaled_per_token" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "segment" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4:value_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/act_out\/abs" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_act_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3:softmax" : {
+      "k" : 8,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/ln_pre_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/expand_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5:query_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/expand\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ln_pre_ffn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/contract\/output_scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/act_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4:softmax" : {
+      "k" : 8,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/residual_ffn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/act_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_act_out" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/act_out\/abs" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/contract_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1:value_fc" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5:softmax" : {
+      "k" : 8,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ln_pre_attn_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/residual_attn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ln_pre_ffn_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_contract\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_act_out\/quantized_per_token" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/ln_pre_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/ln_pre_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_expand_out" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/act_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/ln_pre_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/act_out\/scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/contract_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ln_pre_attn_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_expand\/output_raw" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/act_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2:value_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4:raw_score" : {
+      "k" : 8,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1:query_fc" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/ln_pre_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3:query_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/act_out\/quantized_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/ln_pre_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ln_pre_ffn_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/ln_pre_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/ln_pre_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ln_pre_ffn_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_act_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/ln_pre_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ln_pre_attn_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ln_pre_ffn_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ln_pre_ffn_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ln_pre_ffn_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ln_pre_ffn_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/expand_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/ln_pre_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/act_out\/abs" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d:key_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ln_pre_ffn_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ln_pre_ffn_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/act_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ln_pre_attn_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/act_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/residual_attn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_expand\/output_scaled_per_token" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/residual_ffn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4:scaled_raw_score" : {
+      "k" : 8,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/ln_pre_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/act_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/contract_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1:key_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/act_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_act_out\/scaled_per_token" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ln_pre_attn_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_act_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ln_pre_attn_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2:raw_score" : {
+      "k" : 8,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ln_pre_attn_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/ln_pre_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_contract\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/contract\/output_raw" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/ln_pre_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_expand\/output_raw" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2:key_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/ln_pre_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ln_pre_ffn_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/ln_pre_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/act_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "embed_pos_seg_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/ln_pre_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_expand_out" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/ln_pre_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/expand\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/act_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_act_out\/quantized_per_token" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ln_pre_attn_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/ln_pre_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ln_pre_ffn_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/residual_ffn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5:scaled_raw_score" : {
+      "k" : 8,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1:key_state_concat" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/act_out\/abs" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4:key_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5:query_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/act_out\/quantized_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "position" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ln_pre_attn_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/contract\/output_scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/expand_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/act_out\/abs" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4:query" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_act_out\/scaled_per_token" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/ln_pre_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ln_pre_ffn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ln_pre_ffn_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/ln_pre_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/ln_pre_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ln_pre_attn_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_act_out\/quantized_per_token" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_act_out\/quantized_per_token" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/act_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_act_out\/quantized_per_token" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/residual_attn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ln_pre_attn_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5:value_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/act_out\/quantized_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2:value_fc" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_act_out" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/act_out\/abs" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ln_pre_ffn_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/contract\/output_scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/ln_pre_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_fc_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4:key_fc" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ln_pre_attn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ln_pre_attn_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_fc_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4:weighted_avg" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3:value_fc" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/ln_pre_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ln_pre_attn_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/expand\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/ln_pre_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/act_out\/quantized_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/expand\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ln_pre_ffn_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ln_pre_attn_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/act_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d:query_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2:query_fc" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ln_pre_ffn_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/act_out\/abs" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/residual_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d:value_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/ln_pre_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/expand\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2:key_state_concat" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/act_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/ln_pre_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ln_pre_attn_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d:value_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/ln_pre_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d:key_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/act_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/context_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/act_out\/scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/residual_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3:value_state_concat" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ln_pre_ffn_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/residual_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/act_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/contract\/output_raw" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/ln_pre_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/contract\/output_raw" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/contract_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ln_pre_ffn_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ln_pre_ffn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/contract\/output_raw" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4:value_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/act_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/expand\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/expand\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_contract\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/ln_pre_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/contract_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3:weighted_avg" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3:key_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1:value_state_concat" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5:query_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/ln_pre_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_act_out" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/act_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/ln_pre_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ln_pre_ffn_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_contract_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/ln_pre_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/act_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_act_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/ln_pre_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/ln_pre_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/act_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/expand_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/act_out\/scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/contract\/output_scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_act_out" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/residual_ffn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ln_pre_ffn_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/ln_pre_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ln_pre_attn_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ln_pre_attn_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ln_pre_ffn_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ln_pre_ffn_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/act_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/expand\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ln_pre_ffn_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2:value_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ln_pre_attn_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "input_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_act_out\/quantized_per_token" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ln_pre_attn_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_expand\/output_scaled_per_token" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/ln_pre_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_act_out\/abs" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ln_pre_attn_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/ln_pre_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_contract_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4:value_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3:query" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/act_out\/quantized_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ln_pre_attn_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/act_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/act_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ln_pre_attn_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3:value_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/ln_pre_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/act_out\/scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_fc_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3:query_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/act_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4:value_fc" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/residual_ffn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/ln_pre_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ln_pre_attn_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_act_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/expand_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d:value_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/act_out\/quantized_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_expand\/output_raw" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5:value_state_concat" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/ln_pre_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3:query_fc" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_act_out\/scaled_per_token" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/contract_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2:key_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ln_pre_ffn_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ln_pre_attn_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_expand_out" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/ln_pre_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/act_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ln_pre_ffn_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4:query_fc" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_contract\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/act_out\/abs" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ln_pre_ffn_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/act_out\/scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/contract\/output_raw" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/contract_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/expand\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ln_pre_ffn_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/context_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_contract_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5:key_fc" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/act_out\/scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1:query_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_expand\/output_scaled_per_token" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/contract_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_act_out\/abs" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/ln_pre_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/act_out\/scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/ln_pre_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/ln_pre_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_expand_out" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_contract\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5:raw_score" : {
+      "k" : 8,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/ln_pre_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ln_pre_attn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ln_pre_attn_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d:query_fc" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3:key_state_concat" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d:query_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_act_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_act_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/act_out\/quantized_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/ln_pre_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_act_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ln_pre_ffn_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/ln_pre_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/ln_pre_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_act_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4:query_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_act_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ln_pre_ffn_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_act_out" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/expand_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/ln_pre_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5:key_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/contract\/output_scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/expand_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/contract\/output_raw" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/expand\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/act_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/ln_pre_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/ln_pre_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/contract\/output_scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_act_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/ln_pre_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/expand\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/residual_attn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/residual_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_contract\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d:value_fc" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/act_out\/quantized_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d:value_state_concat" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/ln_pre_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3:raw_score" : {
+      "k" : 8,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "segment_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/contract\/output_scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/act_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/residual_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/act_out\/scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ln_pre_ffn_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ln_pre_attn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/act_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d:softmax" : {
+      "k" : 8,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2:weighted_avg" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/contract\/output_raw" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/ln_pre_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3:value_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/expand\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/ln_pre_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4:key_state_concat" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/context_tmp" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/ln_pre_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/expand\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4:query_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/contract\/output_scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/ln_pre_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ln_pre_ffn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/expand\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_act_out\/abs" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_act_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/act_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2:value_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/expand\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/ln_pre_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2:query" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1:key_fc" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5:value_fc" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/expand\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/ln_pre_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ln_pre_ffn_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/act_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ln_pre_attn_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/ln_pre_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ln_pre_attn_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/ln_pre_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_adapter\/contract\/output_scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/residual_attn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_contract\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/act_out\/scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ln_pre_attn_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1:value_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_adapter\/expand_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ln_pre_attn_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_contract\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5:query_fc" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2:query_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ln_pre_attn_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_expand\/output_raw" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/ln_pre_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ln_pre_ffn_after_output_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ln_pre_ffn_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/contract\/output_scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1:weighted_avg" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4:key_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ln_pre_ffn_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/ln_pre_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/ln_pre_out\/scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/expand\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/ln_pre_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/ln_pre_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5:key_state_concat" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/ln_pre_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/residual_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/act_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/act_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/expand\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/ln_pre_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/ln_pre_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/act_out\/abs" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5:value_fc\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_adapter\/ln_pre_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "add_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3:query_fc\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/residual_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_fc_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/ln_pre_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_act_out\/scaled_per_token" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_act_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/contract\/output_raw" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d:key_state_concat" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ln_pre_attn_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_contract\/output_scaled_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/ffn_adapter\/expand_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ln_pre_ffn_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_5\/attn_out\/abs" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_contract_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/attn_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d:weighted_avg" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/contract_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/attn_fc_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/ln_pre_out" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/attn_adapter\/contract\/output_raw" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/ln_pre_out_after_input_transpose" : {
+      "k" : 1,
+      "w" : 512,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/ffn_adapter\/ln_pre_out\/tok_scales" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_3\/ffn_adapter\/contract\/output_scaled_per_token" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_adapter\/expand\/output_raw" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/ln_pre_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ffn_adapter\/act_out\/max_abs" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/attn_adapter\/act_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_4\/attn_adapter\/contract_out" : {
+      "k" : 64,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_1\/ffn_expand_out" : {
+      "k" : 2048,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d\/ln_pre_ffn_out\/quantized_per_token" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 5,
+      "h" : 1
+    },
+    "ane_gpt2_transformer_layer_3d_2\/ffn_adapter\/act_out\/act_scale_per_token" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    }
+  }
+}
