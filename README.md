@@ -11,15 +11,15 @@ This project presents a supervised machine learning model aimed at predicting th
 ## How it's Made
 The analysis utilizes **Multiple Linear Regression**, a supervised learning technique, to predict abalone age. The project is structured as follows:
 - **Exploratory Data Analysis** 
-- **Data Preprocessing:** Before modeling, we ensured data quality by checking for missing values and independence among measurements. Variable scaling was applied to address the skewed distribution of the target variable (rings/age).
+- **Data Preprocessing:** Before modeling, data cleaning was conducted by checking for missing values and independence among measurements. Variable scaling was applied to address the skewed distribution of the target variable (rings/age).
 - **Model Development:**
   - **Original Model:** Includes all predictors, providing a baseline for performance comparison.
   - **Live Abalone Model:** Excludes post-mortem measurements, focusing on predictors obtainable from living abalone.
 
-- **Model Selection via AIC Minimization:** We applied both forward and backward stepwise regression, guided by the AIC, to identify the most informative subset of predictors while avoiding overfitting.
+- **Model Selection via AIC Minimization:** I applied both forward and backward stepwise regression, guided by the AIC, to identify the most informative subset of predictors while avoiding overfitting.
 
 ## Testing and Validation
-- **Assumption Checks:**
+- **Assumption Checks**
 - **Performance Metrics:** The models were evaluated based on R² (explained variance), RMSE (Root Mean Square Error), and MAE (Mean Absolute Error), with cross-validation to assess generalizability.
 
 ## Lessons Learned
