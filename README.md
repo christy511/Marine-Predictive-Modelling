@@ -7,6 +7,11 @@ This project presents a supervised machine learning model aimed at predicting th
   - `EDA_abalone.qmd`, `EDA_abalone.html`: The Quarto markdown file and its rendered HTML output containing the exploratory data analysis (EDA) code and narrative.
 - **Full Report Files:**
   - `analysis_abalone.qmd`, `analysis_abalone.html`: The Quarto markdown file and its rendered HTML that contains the complete analysis, including data preprocessing, model development, and evaluation.
+ 
+## Discovering Solutions
+This project was developed with the aim of addressing several key challenges:
+- **Balancing Complexity and Usability:** Creating a predictive model that balances technical sophistication with practical usability, making advanced ecological research accessible to a broader audience.
+- **Contributing to Sustainable Marine Resource Management:** By providing a tool for accurate and ethical age determination, this project supports efforts towards the sustainable management of marine resources, ensuring the longevity and health of abalone populations.
 
 ## How it's Made
 The analysis utilizes **Multiple Linear Regression**, a supervised learning technique, to predict abalone age. The project is structured as follows:
