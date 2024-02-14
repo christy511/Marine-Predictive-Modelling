@@ -1,4 +1,4 @@
-# Abalone Age Prediction: A Supervised Machine Learning Approach
+# Marine Predictive Modelling: A Supervised Machine Learning Approach
 
 This project presents a supervised machine learning model aimed at predicting the age of abalone from physical measurements.
 
@@ -36,5 +36,5 @@ The analysis utilizes **Multiple Linear Regression**, a supervised learning tech
 Here are a few more projects from my portfolio:
 - [Moderator Program + Test Framework](https://github.com/christy511/ModeratorProgram-TestFramework)
 A chat forum moderation program and a separate testing program designed to evaluate the performance of the moderation program.
-- [Customised Fitness Regimen](https://github.com/christy511/Customised-Fitness-Regimen)
+- [Personalised Fitness Analytics Program](https://github.com/christy511/Personalised-Fitness-Analytics-Program)
 Adaptive workout recommendation engine using conditional logic and user data.
